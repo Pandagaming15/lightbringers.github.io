@@ -3,33 +3,159 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Organization Structure</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f6fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 1.1em;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #0056b3;
+      border-bottom: 3px solid #0056b3;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 1rem;
+    }
+
+    .org-chart {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .position {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem 2rem;
+      text-align: center;
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .position h3 {
+      margin: 0;
+      color: #222;
+    }
+
+    .position p {
+      margin: 5px 0 0;
+      color: #555;
+    }
+
+    .sub-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    footer {
+      background: #0056b3;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .position {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Hello, I'm Kyle Airon Laroza 👋</h1>
-    <p>Welcome to my personal website hosted on GitHub Pages.</p>
+    <h1>CVE College Inc.</h1>
+    <p>Light Bringers Organization</p>
   </header>
 
   <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I'm a developer who enjoys creating mods for GTA:SA and exploring new tech.</p>
-    </section>
+    <h2>Organizational Structure</h2>
 
-    <section>
-      <h2>Projects</h2>
-      <ul>
-        <li>🚗 Vehicle Lights System for GTA:SA</li>
-        <li>💥 Bullet Holes Mod</li>
-        <li>🚃 Train Extension Plugin</li>
-      </ul>
-    </section>
+    <div class="org-chart">
+      <div class="position">
+        <h3>President</h3>
+        <p>Jane Doe</p>
+      </div>
+
+      <div class="sub-group">
+        <div class="position">
+          <h3>Vice President</h3>
+          <p>John Smith</p>
+        </div>
+        <div class="position">
+          <h3>Secretary</h3>
+          <p>Maria Santos</p>
+        </div>
+        <div class="position">
+          <h3>Treasurer</h3>
+          <p>Paulo Cruz</p>
+        </div>
+      </div>
+
+      <div class="sub-group">
+        <div class="position">
+          <h3>Auditor</h3>
+          <p>Anna Lopez</p>
+        </div>
+        <div class="position">
+          <h3>PIO</h3>
+          <p>Kevin Reyes</p>
+        </div>
+        <div class="position">
+          <h3>Business Manager</h3>
+          <p>Christine Dela Cruz</p>
+        </div>
+      </div>
+
+      <div class="sub-group">
+        <div class="position">
+          <h3>Year Level Representatives</h3>
+          <p>BTLED, BSCS, BSHM, and BEED Representatives</p>
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 Paul Vincent Genosa | Hosted with ❤️ on GitHub Pages</p>
+    <p>© 2025 Student Supreme Government | CVE College Inc.</p>
   </footer>
 </body>
 </html>
